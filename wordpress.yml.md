@@ -1,4 +1,5 @@
-###you can go to site ```bash https://www.composerize.com/``` then you can maker multiple container
+###you can go to site ```bash 
+https://www.composerize.com/``` then you can maker multiple container
 ##I create docker compose file with extension .yml
 ```bash
 #version of docker_compose file you perfer to make ultimate version
@@ -56,7 +57,10 @@ volumes:
 
 ```
 
-###after that u can check you yml file by going to site ```bash https://www.yamllint.com/``` 
+###after that u can check you yml file by going to site 
+```bash
+https://www.yamllint.com/
+``` 
 ###then we tipe command
 ```bash
 docker-compose up -d
