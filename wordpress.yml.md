@@ -13,7 +13,7 @@ services:
    #restart if container down
    restart: always
    #env_vaar(pwd,user..)
-   enviroment:
+   environment:
      #admin
      MYSQL_ROOT_PASSWORD: 123456
      MYSQL_DATABASE: wp_db
@@ -35,25 +35,27 @@ services:
      - "8080:80"
    #db to connect on
    environment:
-     WORDPRESS_DB_HOST:mysql_database:3306
+     WORDPRESS_DB_HOST:mysql_database: 3306
      WORDPRESS_DB_USER: wp_user
      WORDPRESS_DB_PASSWORD: 123456
      WORDPRESS_DB_DB: wp_db
    volumes:
      ["./var/www/html"]
   #image for phpmyadmin to visualize my db
- phpmyadmin
+ phpmyadmin:
    depends_on:
      - mysql_database
    image: phpmyadmin/phpmyadmin
    restart: always
-   ports: - "8000:80"
+   ports: 
+     - "8000:80"
    environment:
      PWA_HOST: mysql_database
      MYSQL_ROOT_PASSWORD: 123456
 #top evel volumes
 volumes:
   mysql: {}
+
 
 ```
 
