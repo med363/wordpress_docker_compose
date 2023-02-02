@@ -63,6 +63,11 @@ volumes:
 ```bash
 https://www.yamllint.com/
 ``` 
+### proprietaire dossier docker
+```bash
+sudo chown $USER /var/run/docker.sock
+```
+
 ###then we tipe command
 ```bash
 docker-compose up -d
