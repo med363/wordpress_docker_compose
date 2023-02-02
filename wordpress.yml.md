@@ -35,7 +35,7 @@ services:
      - "8080:80"
    #db to connect on
    environment:
-     WORDPRESS_DB_HOST:mysql_database: 3306
+     WORDPRESS_DB_HOST: mysql_database:3306
      WORDPRESS_DB_USER: wp_user
      WORDPRESS_DB_PASSWORD: 123456
      WORDPRESS_DB_DB: wp_db
