@@ -9,7 +9,7 @@ services:
 #db layer for wp >> MYSQL DB
  mysql_database:
    #caracteristique of my container
-   image: mysql
+   image: mysql:5.7
    #restart if container down
    restart: always
    #env_vaar(pwd,user..)
